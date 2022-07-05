@@ -1,0 +1,21 @@
+/* font-family: 'Roboto', sans-serif; */
+
+:root {
+    --Amarillo: #EAC926;
+    --Azul: #03264C;
+    --Celeste: #1259c3;
+    --GrisOscuro: #666;
+    --GrisClaro: #ebebeb;
+    --Verde: #39b54a;
+}
+
+body{
+    font-family:'Roboto';
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+}
