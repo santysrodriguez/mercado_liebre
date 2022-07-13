@@ -1,21 +1,27 @@
+/* HEADER */
 .home__header{
     background-color: var(--Amarillo);
     width: 100%;
 
+}
+.home__header--navegacion{
+    display: none;
 }
 .home__header--logo{
     height: 100%;
 }
 .home__header--boton{
     padding-left: 38px;
-}  
+}
+.home__header--boton p{
+    font-size: 12px;
+    
+}
+
 
 .home__header--navegacion p{
     font-size: 12px;
     text-align: center;
-}
-.home__header--navegacion a{
-    color: black;
 }
 .home__header--lista1{
     text-decoration: none;
@@ -26,6 +32,7 @@
     text-decoration: none;
     
 }
+/* MENU */
 .home__header--burger--menu {
     text-align: center;
     justify-content: center;
@@ -36,29 +43,53 @@
 .home__header--burger--menu button{
     background-color:var(--Celeste) ;
     margin-bottom:  5px;
+    color: #fff;
+    height: 28px;
 }
 
 .home__menu--banner img{
     display:block;
     width: 100%;
-    padding-bottom: 10px;
+    height: 77px;
+}
+.home__menu{
+    background-color: var(--GrisClaro);
+}
+.home__menu--productos--precio{
+    padding-left: 10px;
+}
+.home__menu--productos--descuento{
+    color: var(--Verde);
+    padding-left: 10px;
+
 }
 .home__menu h3{
     font-size: 24px;
     text-align: center;
+    margin: 5% 0;
 }
 .home__menu--article{
-    padding: 32px 0;
-
-
+    padding-bottom: 10px;
+}
+.home__menu--article i{
+    color: var(--Verde);
+    padding: 10px;
 }
 .home__menu--article img{
-    width: 50%;
-    height: 50%;
-   margin-left: 83px;
+    text-align: center;
+    width: 100%;
+    height: 90%;
+    padding-left: 5%;
+    padding-right: 5%;
 }
 .home__menu--article h4{
     text-align: center;
+}
+.home__menu--article--caja{
+    border-top: 1px solid #ebebeb;
+    padding: 15px;
+    background-color: #fff;
+    margin: 0 5%;
 }
 
 
@@ -71,11 +102,13 @@
     font-size: 16px;
 
 }
+/* FOOTER */
 .home__footer:first-child{
     padding-top: 40px;
 }
 .home__footer{
     text-align: center;
+    margin: 0 5% ;
 }
 .home__footer i{
    color: var(--Celeste);
@@ -88,4 +121,32 @@
 }
 .home__footer h3{
     padding-bottom: 15px;
+}
+
+/* TABLET | 768 PX */
+@media (min-width:768px){
+    /* header */
+    .home__header--burger--menu{
+        display: none;
+    }
+    .home__header--navegacion{
+        display: inline-block;
+    }
+    .home__header--boton p{
+        text-align: center;  
+    }
+    .home__menu--banner img{
+        width: 100%;
+        height: 35%;
+        
+    }
+    .home__menu--section article{
+        box-shadow: 26px 10px 38px 5px rgba(0,0,0,0.75);
+    }
+
+
+}
+/* media queries | desktop | 1024*/
+@media (min-width:1024px){
+    
 }
