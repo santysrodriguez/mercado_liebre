@@ -2,9 +2,10 @@
 .home__header {
     background-color: var(--Amarillo);
     width: 100%;
-    
+
 }
-.home__header--encabezado{
+
+.home__header--encabezado {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -17,21 +18,24 @@
 .home__header--navegacion a {
     color: black;
 }
-.home__header--logo{
+
+.home__header--logo {
     width: 50%;
 }
 
-.home__header--logo img{
+.home__header--logo img {
     width: 100%;
     margin-left: 10px;
 }
-.home__header--barra{
+
+.home__header--barra {
     width: 45%;
     position: relative;
     text-align: center;
-    
+
 }
-.home__header--dollar{
+
+.home__header--dollar {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -40,14 +44,15 @@
     width: 100%;
 }
 
-.home__header--barra input{ 
+.home__header--barra input {
     border-radius: 5px;
     border: none;
     width: 87%;
 }
-.home__header--barra i{
+
+.home__header--barra i {
     position: absolute;
-    right: 7%; 
+    right: 7%;
     top: 2px;
     border-radius: 5px;
     border: none;
@@ -101,7 +106,18 @@
 }
 
 .home__menu {
+    display: flex;
     background-color: var(--GrisClaro);
+    margin: 0 5%;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.home__menu--section {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+
 }
 
 .home__menu--productos--precio {
@@ -117,10 +133,12 @@
 }
 
 .home__menu h3 {
-    font-size: 24px;
+    font-size: 22px;
     text-align: left;
     margin: 5% 0;
     padding: 0 6%;
+    width: 100%;
+    color: var(--GrisOscuro);
 }
 
 .home__menu--article {
@@ -136,8 +154,6 @@
     text-align: center;
     width: 100%;
     height: 90%;
-    padding-left: 5%;
-    padding-right: 5%;
 }
 
 .home__menu--article h4 {
@@ -149,7 +165,6 @@
     border-top: 1px solid #ebebeb;
     padding: 15px;
     background-color: #fff;
-    margin: 0 5%;
     gap: 10px;
     position: relative;
     border-radius: solid 1px color var(--Verde);
@@ -214,20 +229,22 @@
 @media (min-width:768px) {
 
     /* header */
-    .home__header{
+    .home__header {
         display: flex;
         flex-wrap: wrap;
         width: 100%;
-        
+
     }
-    .home__header--encabezado{
+
+    .home__header--encabezado {
         width: 60%;
         display: flex;
         flex-wrap: wrap;
-    
-        
+
+
     }
-    .home__header--dollar{
+
+    .home__header--dollar {
         width: 40%;
         padding: 0%;
         display: flex;
@@ -242,50 +259,61 @@
         display: flex;
         justify-content: space-between;
         width: 100%;
-        
+
         margin: 0 15px;
     }
 
-    .home__header--lista1{
-        display: flex;
-        gap: 10px;
-        justify-content: space-between;
-        align-items: center;
-    }
-    .home__header--lista2{
+    .home__header--lista1 {
         display: flex;
         gap: 10px;
         justify-content: space-between;
         align-items: center;
     }
 
-    .home__header--boton p {
-        text-align: center;
-        padding-top: 1%;
+    .home__header--lista2 {
+        display: flex;
+        gap: 10px;
+        justify-content: space-between;
+        align-items: center;
     }
+
 
     .home__menu--banner img {
         width: 100%;
         height: 35%;
+        margin: auto;
 
     }
-    
+    .home__menu h3{
+        padding: 0%;
+    }
+
+    .home__menu--section{
+        gap: 25px;
+        justify-content: space-between;
+        
+    } 
 
     .home__menu--article {
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
-    }
-    .home__menu--article div{
-        width: 35%;
-        height: 30%;
-        padding: 10px;
-    }
-    .home__menu--article--caja{
-        padding: 20px;
-    }
-
+        width: 47%;
+        align-items: center;
+        padding-bottom: 0;
+    } 
 
 
 }
 
 /* media queries | desktop | 1024*/
-@media (min-width:1024px) {}
+@media (min-width:1024px) {
+    .home__menu--section{
+        gap: 5px;
+        
+    } 
+
+    .home__menu--article {
+        width: 23%;
+        align-items: center;
+    }
+
+}
