@@ -1,178 +1,291 @@
 /* HEADER */
-.home__header{
+.home__header {
     background-color: var(--Amarillo);
     width: 100%;
-
+    
 }
-.home__header--navegacion{
+.home__header--encabezado{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.home__header--navegacion {
     display: none;
 }
-.home__header--navegacion a{
+
+.home__header--navegacion a {
     color: black;
 }
 .home__header--logo{
-    height: 100%;
+    width: 50%;
 }
-.home__header--boton{
-    padding-left: 38px;
+
+.home__header--logo img{
+    width: 100%;
+    margin-left: 10px;
+}
+.home__header--barra{
+    width: 45%;
+    position: relative;
+    text-align: center;
     
 }
-.home__header--boton p{
+.home__header--dollar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    font-size: 14px;
+    width: 100%;
+}
+
+.home__header--barra input{ 
+    border-radius: 5px;
+    border: none;
+    width: 87%;
+}
+.home__header--barra i{
+    position: absolute;
+    right: 7%; 
+    top: 2px;
+    border-radius: 5px;
+    border: none;
+    color: var(--GrisOscuro);
+    padding: 0 4px;
+    background-color: #FFF;
+}
+
+.home__header--boton p {
     font-size: 12px;
-    
 }
 
 
-.home__header--navegacion p{
+.home__header--navegacion p {
     font-size: 12px;
     text-align: center;
 }
-.home__header--lista1{
+
+.home__header--lista1 {
     text-decoration: none;
     padding: 10px 0 0 0;
 }
-.home__header--lista2{
+
+.home__header--lista2 {
     padding: 20px 0 10px 0;
     text-decoration: none;
-    
+
 }
+
 /* MENU */
 .home__header--burger--menu {
     text-align: center;
     justify-content: center;
     align-items: center;
     padding-top: 2px;
-    
+
 }
-.home__header--burger--menu button{
-    background-color:var(--Celeste) ;
-    margin-bottom:  5px;
+
+.home__header--burger--menu button {
+    background-color: var(--Celeste);
+    margin-bottom: 5px;
     color: #fff;
     height: 28px;
     border-radius: 5px;
 }
 
-.home__menu--banner img{
-    display:block;
+.home__menu--banner img {
+    display: block;
     width: 100%;
     height: 77px;
 }
-.home__menu{
+
+.home__menu {
     background-color: var(--GrisClaro);
 }
-.home__menu--productos--precio{
+
+.home__menu--productos--precio {
     padding-left: 10px;
     padding-top: 10px;
 }
-.home__menu--productos--descuento{
+
+.home__menu--productos--descuento {
     color: var(--Verde);
     padding-left: 13px;
     padding-top: 5px;
 
 }
-.home__menu h3{
+
+.home__menu h3 {
     font-size: 24px;
     text-align: left;
     margin: 5% 0;
     padding: 0 6%;
 }
-.home__menu--article{
+
+.home__menu--article {
     padding-bottom: 10px;
 }
-.home__menu--article i{
+
+.home__menu--article i {
     color: var(--Verde);
     padding: 10px;
 }
-.home__menu--article img{
+
+.home__menu--article img {
     text-align: center;
     width: 100%;
     height: 90%;
     padding-left: 5%;
     padding-right: 5%;
 }
-.home__menu--article h4{
+
+.home__menu--article h4 {
     text-align: center;
+    color: var(--GrisOscuro);
 }
-.home__menu--article--caja{
+
+.home__menu--article--caja {
     border-top: 1px solid #ebebeb;
     padding: 15px;
     background-color: #fff;
     margin: 0 5%;
     gap: 10px;
-}
-.home__menu--article--caja {
+    position: relative;
     border-radius: solid 1px color var(--Verde);
-}
-.home__menu--article--caja i{
-    border: 2px solid var(--Verde);
-    border-radius: 50%;
-    padding-left: 5px;
-    padding-top: 5px;
-    
-    
+    display: flex;
+    align-items: flex-end;
+    flex-wrap: wrap;
 }
 
-
-.home__menu--productos--precio{
-    font-size: 18px;
-    
-
-}
-.home__menu--productos--descuento{
+.home__menu--article--caja i {
+    display: block;
     font-size: 16px;
-
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
 }
+
+
+.home__menu--productos--precio {
+    font-size: 18px;
+    /* width: 30%; */
+    padding: 0;
+}
+
+.home__menu--productos--descuento {
+    font-size: 16px;
+    width: 70%;
+    padding: 0;
+}
+
 /* FOOTER */
-.home__footer:first-child{
+.home__footer:first-child {
     padding-top: 40px;
 }
-.home__footer{
+
+.home__footer {
     text-align: center;
-    margin: 0 5% ;
+    margin: 0 5%;
 }
-.home__footer i{
-   color: var(--Celeste);
-   font-size: 24px;
-   margin-bottom: 15px;
+
+.home__footer i {
+    color: var(--Celeste);
+    font-size: 24px;
+    margin-bottom: 15px;
 }
-.home__footer p{
+
+.home__footer p {
     font-size: 16px;
     margin-bottom: 30px;
 }
-.home__footer h3{
+
+.home__footer h3 {
     padding-bottom: 15px;
 }
 
 /* TABLET | 768 PX */
-@media (min-width:768px){
-    /* header */
-    .home__header--boton {
-        text-align: center;
+@media (min-width:768px) {
 
-    }
-    .home__header--burger--menu{
-        display: none;
-    }
-    .home__header--navegacion{
-        display: inline-block;
-    }
-    .home__header--boton p{
-        text-align: center; 
-        padding-top: 1%; 
-    }
-    .home__menu--banner img{
+    /* header */
+    .home__header{
+        display: flex;
+        flex-wrap: wrap;
         width: 100%;
-        height: 35%;
         
     }
-    .home__menu--article{
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    .home__header--encabezado{
+        width: 60%;
+        display: flex;
+        flex-wrap: wrap;
+    
+        
+    }
+    .home__header--dollar{
+        width: 40%;
+        padding: 0%;
+        display: flex;
+
+    }
+
+    .home__header--burger--menu {
+        display: none;
+    }
+
+    .home__header--navegacion {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        
+        margin: 0 15px;
+    }
+
+    .home__header--lista1{
+        display: flex;
+        gap: 10px;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .home__header--lista2{
+        display: flex;
+        gap: 10px;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .home__header--boton p {
+        text-align: center;
+        padding-top: 1%;
+    }
+
+    .home__menu--banner img {
+        width: 100%;
+        height: 35%;
+
     }
     
 
+    .home__menu--article {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+    .home__menu--article div{
+        width: 35%;
+        height: 30%;
+        padding: 10px;
+    }
+    .home__menu--article--caja{
+        padding: 20px;
+    }
+
+
 
 }
+
 /* media queries | desktop | 1024*/
-@media (min-width:1024px){
-    
-}
+@media (min-width:1024px) {}
