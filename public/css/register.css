@@ -1,0 +1,85 @@
+.register__section{
+    padding-top: 30px;
+    /* width: 100%; */
+    margin: 0 10%;
+}
+
+.form--datos{
+    width: 100%;
+    margin-bottom: 30px;
+    
+}
+.titulo{
+    font-size: 18px;
+    margin: 15px 0;
+}
+.form__text--error{
+    color: red;
+    display: block;
+}
+.form--catalogar{
+    display: flex;
+    gap: 17%;
+}
+.form--options{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+    gap: 10px 0;
+}
+
+.checkbox{
+    margin-right: 30px;
+    
+}
+.caja--avatar{
+    margin-bottom: 10px;
+}
+.form__button--imagen{
+    background-color: var(--GrisOscuro);
+    border-radius: 5px;
+    color: white;
+    padding: 10px;
+}
+.caja--contrasenia{
+    border-radius: 5px;
+    margin: 30px 0 ;
+}
+.boton--enviar{
+    border: none;
+    border-radius: 5px;
+    color: var(--Celeste);
+    width: 100%;
+    color: white;
+    margin-left: 42%;
+    
+}
+.boton__enviar{
+    padding-top: 12px;
+    width: 100%;
+    border-radius: 5px;
+    background-color: var(--Celeste);
+    margin-top: 40px;
+    padding-bottom: 5px;
+    margin-bottom: 30px;
+    
+}
+.form--input{
+    border: solid 1px white;
+    outline: none;
+    padding: 10px 0;
+    width: 100%;
+    border-radius: 5px;
+}
+
+@media (min-width:768px){
+    .boton--enviar{
+        margin-left: 47%;
+
+    }
+    .form--catalogar{
+        padding-left: 20%;
+    }
+
+}

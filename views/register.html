@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>|Registrate</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <script src="https://kit.fontawesome.com/965e5e405e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="home__header">
+        <div class=" home__header--encabezado">
+            <div class="home__header--logo">
+                <a href="/"><img height="82" src="/img/logo-mercado-liebre.svg" alt=""></a>
+            </div>
+            <div class="home__header--barra">
+                <input type="text" placeholder="Buscar Productos">
+                <i class="fa-solid fa-magnifying-glass"></i>
+
+            </div>
+        </div>
+        <div class="home__header--dollar">
+            <i class="fa-solid fa-hand-holding-dollar"></i>
+            <p>Comprá en cuotas y sin tarjeta de crédito</p>
+        </div>
+        <nav class="home__header--navegacion">
+            <ul class="home__header--lista1">
+                <li><a href="">Ofertas</a></li>
+                <li><a href="">Tiendas Oficiales</a></li>
+                <li><a href="">Vender</a></li>
+                <li><a href="">Ayuda</a></li>
+            </ul>
+            <ul class="home__header--lista2">
+                <li><a href="/register">Creá tu cuenta</a><i class="fa-solid fa-id-card"></i></li>
+                <li><a href="/login">Ingresá</a><i class="fa-solid fa-arrow-right-to-bracket"></i></li>
+                <li><a href="">Mis Compras</a><i class="fa-solid fa-cart-shopping"></i></li>
+            </ul>
+
+        </nav>
+        <div class="home__header--burger--menu">
+            <button><i class="fa-solid fa-bars"></i></button>
+        </div>
+    </header>
+    <main class="register__menu">
+        <section class="register__section">
+            <form action="" class="form__register">
+                <div class="form--datos">
+                    <input class="form--input" type="text" id="nombre" name="nombre" placeholder=" Nombre y Apellido" >
+                    <small class="form__text--error">*El nombre y apellido es obligatorio</small>
+                </div> 
+                <div class="form--datos">
+                    <input class="form--input" type="text" id="nombreDeUsuario" name="nombreDeUsuario" placeholder=" Nombre de Usuario">
+                    <small class="form__text--error">*El nombre de usuario es obligatorio</small> 
+                </div>
+                <div class="form--datos">
+                    <input class="form--input" type="email" id="email" name="email" placeholder="Tu E-mail">
+                    <small class="form__text--error">*su correo debe contener un "@gmail.com"</small>
+                </div>
+                <h4 class="titulo">Fecha de Nacimiento</h4>
+                <div class="form--datos">
+                    <input class="form--input" type="date" id="fechaDeNacimiento" name="fechaDeNacimiento" placeholder=" Fecha de Nacimiento">
+                    <small class="form__text--error">*debes ser mayor de edad</small>
+                </div>
+                <div class="form--datos">
+                    <input class="form--input" type="text" id="domicilio" name="domicilio" placeholder=" Domicilio">
+                </div>
+                <h4 class="titulo"> Perfil del Usuario </h4>
+                <div class="form--catalogar">
+                    <label for="perfil"><input type="radio" name="perfil"> Comprador </label>
+                    <label for="perfil"><input type="radio" name="perfil"> Vendedor</label>
+                </div>
+                <h4 class="titulo"> Intereses </h4>
+                <div class="form--options">
+                    
+                    <label for="electro"><input class="checkbox" type="checkbox" name="electro">Electro </label>
+                    
+                    <label for="moda"><input class="checkbox" type="checkbox" name="moda">Moda</label>
+
+                    <label for="hogar"><input class="checkbox" type="checkbox" name="hogar">Hogar </label>
+
+                    <label for="juguete"><input class="checkbox" type="checkbox" name="juguete">juguete</label>
+
+                    <label for="vida"><input class="checkbox" type="checkbox" name="vida">Vida Sana </label>
+                    
+                </div>
+                <div class="caja--avatar">
+                    <label class="form__button--imagen" for="avatar">Seleccione un imagen</label>
+                    <input hidden class="form--input" type="file" id="avatar" name="avatar">
+                </div>
+                <div class="caja--contrasenia">
+                    <input class="form--input" type="password" id="password" name="password" placeholder=" Ingrese una Contraseña">
+                    <small class="form__text--error">*debe contener entre 8 y 12 caracteres</small>
+                </div>
+                <div class="caja--contrasenia">
+                    <input class="form--input" type="password" id="password2" name="password2" placeholder=" Confirme su Contraseña" >
+                    <small class="form__text--error">*la contraseña no coinciden</small>
+                </div>
+                <div>
+                    <input type="reset" name="borar" id="borrar">
+                </div>
+                <div class="boton__enviar">
+                    <a href="/" class="boton--enviar">Enviar</a>
+                </div>
+
+
+            </form>
+
+        </section>
+    </main>
+</body>
+</html>

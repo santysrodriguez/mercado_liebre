@@ -1,0 +1,39 @@
+
+.login--section {
+    padding-top: 30px;
+}
+.login--ingresa{
+    text-align: center;
+    
+    
+}
+.form__input{
+    border: solid 1px white;
+    outline: none;
+    padding: 10px 0;
+    width: 80%;
+    border-radius: 5px;
+}
+.login--contrasenia{
+    padding-top: 5%;
+}
+.button__enviar{
+    padding-top: 12px;
+    width: 80%;
+    border-radius: 5px;
+    background-color: var(--Celeste);
+    margin-top: 40px;
+    padding-bottom: 5px;
+    margin-bottom: 30px;
+    margin-left: 10%;
+    
+}
+.button--enviar{
+    border: none;
+    border-radius: 5px;
+    color: var(--Celeste);
+    width: 100%;
+    color: white;
+    
+}
+

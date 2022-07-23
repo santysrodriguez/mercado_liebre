@@ -9,20 +9,25 @@
     --Verde: #39b54a;
 }
 
-body{
-    font-family:'Roboto';
+body {
+    font-family: 'Roboto';
     background-color: var(--GrisClaro);
+    width: 100%;
 }
+
 *{
     margin: 0px;
     box-sizing: border-box;
-    }
-a{
+}
+
+a {
     text-decoration: none;
 }
-ul{
+
+ul {
     list-style: none;
 }
-.h3{
+
+.h3 {
     width: 100%;
 }
