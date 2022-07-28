@@ -31,9 +31,18 @@
 .button--enviar{
     border: none;
     border-radius: 5px;
-    color: var(--Celeste);
     width: 100%;
     color: white;
+    display: inline-block;
     
+}
+.button__enviar:hover{
+    background-color: #0022AA;
+}
+.copyrigth{
+    display: inline-block;
+    width: 100%;
+    background-color: white;
+    font-weight: 700;
 }
 

@@ -53,6 +53,7 @@
     width: 100%;
     color: white;
     margin-left: 42%;
+    display: inline-block;
     
 }
 .boton__enviar{
