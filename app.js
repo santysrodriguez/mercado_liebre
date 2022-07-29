@@ -11,6 +11,6 @@ app.get('/login',(req,res) => res.sendFile(path.join(__dirname, 'views','login.h
 
 
 
-app.listen(process.env.PORT || 8000, () => console.log('Server running in http://localhost:' + process.env.PORT || 3030))
+app.listen(process.env.PORT || 3030, () => console.log('Server running in http://localhost:' + process.env.PORT || 3030))
 
 
